@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.container {
+	padding: 120px 80px;
+}
+
+.destaque {
+	font-weight: 700;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 36px;
+	color: #3c184e;
+	text-align: center;
+	margin: 0 0 35px;
+}
+
+body {
+	width: 100%;
+	max-width: 1100px;
+	min-width: 300px;
+	height: auto;
+	overflow: auto scroll;
+	background-color: #ffffff;
+	margin: 0px auto 0px auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/*logo, links de navegação 0px 0px 10px black*/
+.secao-topo .logo {
+	width: 380px;
+	margin: 10px 0 0 8px;
+	padding: 10px;
+	border: 2px solid #3c184e;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #3c184e inset;
+}
+
+.nav-container {
+	text-align: right;
+	margin-right: 35px;
+	font-size: 18px;
+}
+
+.nav-container ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.nav-container li {
+	display: inline;
+	padding-top: 40px;
+	margin: 20px 0 5px 28px;		
+	color: #3c184e;
+	font-weight: bold;
+}
+
+/*banner*/
+.container-banner {
+	background-image: url("../img/banner-topo.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	margin-top: auto;
+	display: flex;	
+}
+
+/*<h1> sobre o banner (? background-size: contain;)*/
+.titulo-banner {
+	max-width: 1024px;
+	min-width: 400px;
+	text-align: center;
+	font-size: 25px;
+	color: #3c184e;
+	margin: auto;
+	padding: 30px;
+	background-color: #ffffffc4;
+	box-shadow: 0px 8px 32px #1f26875e;
+	border-radius: 10px;
+	position: absolute;
+	top: 250px;
+	left: 50%;/*COPILOT*/
+	transform: translateX(-50%); /* COPILOT????????????????? TESTAR Centraliza horizontalmente */
+	width: 60%;
+	display: flex;
+	justify-content: center; /* COPILOT Centraliza o texto dentro do cont�iner */
+}
+
+/*botao com link externo whatsapp banner*/
+.texto_banner2 a {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 20px auto 20px auto;
+	max-width: 200px;
+	background-color: #3c184e;
+	color: #fff;
+	box-shadow: 0px 8px 32px #1f26875e;
+	text-align: center;
+	position: absolute;
+	top: 500px;
+	left: 50%; /*COPILOT*/
+	transform: translateX(-50%); /* COPILOT Centraliza horizontalmente */
+}
+/*icone do whatsapp*/
+.texto_banner2 img {
+	width: 20px;
+	height: 20px;
+	display: inline;
+	position: relative;
+	background-size: cover;
+	background-size: contain;
+}
+
+/* Serviços */
+#servicos {
+	margin-bottom: 0;
+}
+
+.box-servicos {
+	width: 100%;
+	max-width: 800px;
+	color: #3c184e;
+	margin: 0 auto 15px;
+	text-align: justify;
+}
+
+.box-servicos li {
+	font-size: 20px;
+	margin: 0 0 20px;	
+}
+
+.box-servicos-img, img {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;	
+	box-shadow: 3px 6px 10px 6px #0000005c;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+/*Redes sociais*/
+.paragrafoRedesSociais {
+	padding: 120px 80px;
+	background-color: #3c184e;
+	width: 99.9%;
+	margin: 0 auto 30px auto;	
+}
+
+.containerRedesSociais {
+	display: flex;
+	justify-content: center;	
+	background-color: #3c184e;
+}
+
+.paragrafoRedesSociais p {
+	width: 800px;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	margin: 0 auto; /* Centraliza o parágrafo */
+	padding: 10px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.containerRedesSociais img {
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    width: 40px;  /* Ajuste o tamanho conforme necessário */
+	margin: 30px 40px 0 40px;
+}
+
+/* Seção Marcas*/
+#marcas {
+	margin-bottom: 110px;
+	padding-top: 70px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+	grid-gap: 15px; /* Espaçamento entre as imagens */
+	padding: 10px;
+	width: 100%;	
+	width: 800px;
+	margin: 0 auto;
+}
+
+.grid-container img {
+	width: 148px;
+	height: 148px;
+	margin: 0 15px;	
+}
+
+/* Segunda seção Redes Sociais */
+#redes_sociais_2 {
+	max-height: 120px;
+	background-color: #3c184e;
+	width: 99.9%;
+	margin: 0 auto 70px auto; 		
+}
+
+#redes_sociais_2 .containerRedesSociais {
+	display: flex;
+	justify-content: center;
+	background-color: #3c184e;	
+}
+
+#redes_sociais_2 .paragrafoRedesSociais p {
+	width: 800px;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	margin: 0 auto; /* Centraliza o parágrafo */
+	padding: 10px;
+}
+
+#redes_sociais_2 .bold-text {
+	font-weight: 700;
+}
+
+#redes_sociais_2 .containerRedesSociais img {
+	height: 40px; /* Ajuste o tamanho conforme necessário */
+	width: 40px; /* Ajuste o tamanho conforme necessário */
+	margin: 10px 20px;
+}
+
+/* Seção Onde estamos */
+.localizacao {
+	width: 100%;	
+	align-items: center;
+	padding: 180px 80px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 90px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+.localizacao #onde_estamos h3 {
+	padding: 40px 0 0 0;
+}
+
+.localizacao #onde_estamos p {
+	font-size: 30px;
+	color: #3c184e;
+	text-align: center;
+	margin: 0 0 10px 0;	
+}
+
+.localizacao #mapa {
+	align-items: center;
+	margin: 0;	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+}
+
+ul {
+	list-style-type: none; /*Para remover os marcadores de uma lista em HTML5*/
+}
+
+.localizacao #onde_estamos li {
+	width: 250px;
+	text-align: center;
+	align-items: center;
+	margin: 10px auto 0 auto;
+	padding: 10px;
+	font-weight: bold;
+	background-color: #f8f8ff;
+	border: 1px solid #3c184e;
+	border-radius: 10px;	
+}
+
+/*Rodapé*/
+#footer {
+	width: 100%;
+	height: auto;
+	padding: 20px 5px;
+	bottom: 0;
+	background-color: #3c184e;	
+	align-items: center; /* Centraliza horizontalmente o conteúdo */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centraliza verticalmente o conteúdo */
+}	
+
+#footer p {	
+	color: #fff;
+	text-align: center;
+	bottom: 5px;	
+	padding: 5px 0;
+}
+
+footer a {
+    color: #ff0000; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+footer a:hover {
+    color: #00ff00; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
